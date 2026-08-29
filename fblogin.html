@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Facebook Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            width: 400px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px gray;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0e0e0f;
+            font-size: 32px;
+        }
+
+        input {
+            width: 90%;
+            padding: 14px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        h2 {
+            color: #1877f2;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        #b1 {
+            width: 96%;
+            padding: 14px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        #b1:hover {
+            background-color: red;
+        }
+
+        #b2:hover {
+            background-color: rgb(10, 1, 30);
+        }
+
+        #b2 {
+            padding: 14px 20px;
+
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <h1>Log in to Facebook</h2>
+            <div>
+                <input type="text" placeholder="Email address or mobile number" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div>
+                <button id="b1" type="submit">Log In</button>
+            </div>
+            <div>
+                <h2>Forgotten password?</h2>
+            </div>
+            <hr>
+            <br>
+            <button id="b2" type="button">Create new account</button>
+            <div style="text-align: center;padding: 10px;">
+                <span style="color: blue; font-size: 30px;">∞</span>
+                <span style="font-size: 22px;">Meta</span>
+            </div>
+    </form>
+</body>
+
+</html>
