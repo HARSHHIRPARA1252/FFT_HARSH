@@ -1,16 +1,22 @@
 <html>
 
 <head>
-    <title>Semantic Dep Website</title>
-
+    <title>semantic dep website</title>
     <style>
         nav {
             display: flex;
             justify-content: space-around;
         }
 
+        h1 {
+            text-align: center;
+            padding-top: 10px;
+            font-family: monospace;
+            text-shadow: 2px 4px 8px rgb(0, 0, 0);
+        }
+
         header {
-            background-color: rgb(81, 0, 255);
+            background-color: aquamarine;
         }
 
         * {
@@ -18,124 +24,414 @@
             padding: 0;
         }
 
-        h1 {
-            text-align: center;
-            padding-top: 10px;
-            font-family: 'Times New Roman', Times, serif;
-            text-shadow: 2px 4px 5px white;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
         }
 
         li {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            list-style-type: none;
-            color: white;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
+            margin-top: 20px;
+            list-style: none;
         }
 
-        P {
+        nav a {
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            margin-top: 15px;
             text-align: center;
-            line-height: 25px;
         }
 
         h2 {
-            text-align: center;
-            margin-top: 10px;
-            font-family: monospace;
-            color: rgb(12, 210, 42);
-            text-shadow: 2px 4px 8px gray;
+            margin-top: 20px;
+            font-size: medium;
+            color: rgb(203, 113, 113);
+            font-family: cursive;
+            text-shadow: 2px 4px 8px;
         }
 
         h3 {
             text-align: center;
             margin-top: 20px;
-            color: rgb(18, 87, 235);
-            text-shadow: 2px 4px 8px solid black;
         }
-         h4 {
+
+        h4 {
             text-align: center;
-            margin-top: 20px;
-            color: rgb(20, 220, 100);
-            text-shadow: 2px 4px 8px solid black;
+            margin-top: 15px;
+            color: darkcyan;
+        }
+
+
+        section {
+            padding-top: 20px;
+        }
+
+        .highlights-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         img {
-
-        margin-left: 75px;
-        margin-top: 50px;
-        width: 275px;
-        height: 300px;
-        box-shadow: 10px 15px 20px rgb(67, 5, 5);
-        border-radius: 20px;
-
-
-
+            height: 250px;
+            width: 250px;
+            margin-top: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 4px 6px;
         }
 
-        article {
-            margin-left: 60px;
+        article p {
+            margin-top: 10px;
         }
-        div{
-            display: flex;
-            justify-content: space-around;
-            gap: 9px;
-            margin-top: 15px;
+
+        aside {
+            background-color: lightyellow;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: aquamarine;
+            padding: 15px;
             text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        form input,
+        form textarea {
+            margin-top: 10px;
+            padding: 8px;
+        }
+
+        form button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: aquamarine;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
     <header>
-
-        <h1>Semantic Dep Website</h1>
+        <h1>Semantic Dep Web </h1>
         <nav>
-            <li>Home</li>
-            <li>About Deparment</li>
-            <li>Faculty</li>
-            <li>Courses</li>
-            <li>TimeTable</li>
-            <li>Achievements</li>
-            <li>Events</li>
-            <li>Contact</li>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about Department</a></li>
+                <li><a href="#faculty">faculty</a></li>
+                <li><a href="#courses">courses</a></li>
+                <li><a href="#timetable">timetable</a></li>
+                <li><a href="#achievement">achievement</a></li>
+                <li><a href="#events">events</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
         </nav>
-
     </header>
-    <!--Home section-->
-    <section>
-        <P>
-            The Master of Computer Applications (MCA) program with specializations in Data Science, General, Generative
-            AI, and Game Designing is designed to deliver advanced computing knowledge along with domain-specific
-            expertise aligned to emerging industry trends.The program follows a comprehensive, application-driven
-            approach, enabling students to build strong conceptual understanding and practical proficiency in core areas
-            such as programming (Java, Python), data structures, algorithms, database management systems, cloud
-            computing, and software engineering.From the early stages, students progressively develop expertise in their
-            chosen domains:Data Science focuses on data analysis, statistical modeling, visualization, and big data
-            technologies
-        </P>
-        <marquee>
-            <h2>Dear MCA Graduates, Welcome to 'AU</h2>
-        </marquee>
-        <h3>Highlights</h3>
 
-        <article>
-            <img src="./paulos-ai-8330457_1920.jpg" alt="image not found">
-            <img src="./rudonni-chess-6071157_1920.jpg" alt="image not found">
-            <img src="./geralt-artificial-intelligence-4550606_1920.jpg" alt="image not found">
-            <img src="./cliff1126-ai-generated-8136169_1920.png" alt="image not found">
-             <div>
-                <p>Artifical & Machine</p>
-                <p>Game development</p>
-                <p>Data Science</p>
-                <p>Cyber security</p>
+    <!-- main container for page sections -->
+    <main>
+        <!-- home section -->
+        <section id="home">
+            <p>The Master of Computer Applications (MCA) program with specializations in Data Science, General,
+                Generative AI, and Game Designing is designed to deliver advanced computing knowledge along with
+                domain-specific expertise aligned to emerging industry trends.
+                The program follows a comprehensive, application-driven approach, enabling students to build strong
+                conceptual understanding and practical proficiency in core areas such as programming (Java, Python),
+                data structures, algorithms, database management systems, cloud computing, and software engineering.
+                From the early stages, students progressively develop expertise in their chosen domains:
+                Data Science focuses on data analysis, statistical modeling, visualization, and big data technologies.
+                Generative AI emphasizes deep learning, large language models, natural language processing, and
+                intelligent systems.
+                Game Designing covers game design, graphics and animation, UIUX, and immersive technologies like VRAR.
+                The General track offers flexibility to explore multiple computing domains.</p>
+            <marquee>
+                <h2>HELLO MCA GRADUTES,WELCOME</h2>
+            </marquee>
+
+            <h3>Highlights</h3>
+
+            <div class="highlights-container">
+                <article>
+                    <img src="./geralt-artificial-intelligence-4389372_1920.jpg" alt="Data Science">
+                    <p>data Science</p>
+                </article>
+
+                <article>
+                    <img src="./paulos-ai-8330457_1920.jpg" alt="AI/ML">
+                    <p>AI/ML</p>
+                </article>
+
+                <article>
+                    <img src="./cliff1126-ai-generated-8136169_1920 (1).png" alt="Cybersecurity">
+                    <p>cybersecurity</p>
+                </article>
+
+                <article>
+                    <img src="./rudonni-chess-6071157_1920.jpg">
+                    <p>Game Devlopement</p>
+                </article>
             </div>
-        </article>
-       <h3>About deparment</h3>
-       <h4>Our vision</h4>
+        </section>
 
-    </section>
+        <!-- about department section -->
+        <section id="about">
+            <h3>About Department</h3>
+
+            <h4>Vision</h4>
+            <p>To emerge as a premier center of computer applications education and research, developing ethical,
+                innovative, and globally competent technology leaders.</p>
+
+            <h4>Mission</h4>
+            <p>To provide high-quality education through modern curricula and state-of-the-art laboratories.<br>
+                To foster research, problem-solving abilities, and industry collaborations among students.<br>
+                To instill professional ethics, team spirit, and lifelong learning for societal advancement.</p>
+
+            <h4>Objectives</h4>
+            <p>1. Equip students with core software development skills and emerging industry frameworks.<br>
+                2. Bridge academia and industry through guest lectures, hackathons, and industrial internships.<br>
+                3. Encourage interdisciplinary research projects and higher education pursuits.</p>
+        </section>
+
+        <!-- faculty section -->
+        <section id="faculty">
+            <h3>Faculty Details</h3>
+            <table>
+                <tr>
+                    <th>Faculty Name</th>
+                    <th>Designation</th>
+                    <th>Subjects Handled</th>
+                </tr>
+                <tr>
+                    <td>Dr. A. Sharma</td>
+                    <td>Professor & Head of Department</td>
+                    <td>Data Mining, Generative AI, Deep Learning</td>
+                </tr>
+                <tr>
+                    <td>Prof. R. Verma</td>
+                    <td>Associate Professor</td>
+                    <td>Data Structures, Python Programming, Algorithms</td>
+                </tr>
+                <tr>
+                    <td>Dr. K. Patel</td>
+                    <td>Assistant Professor</td>
+                    <td>Database Management Systems, Cloud Computing</td>
+                </tr>
+                <tr>
+                    <td>Prof. S. Nair</td>
+                    <td>Assistant Professor</td>
+                    <td>Cybersecurity, Network Protocols, Ethical Hacking</td>
+                </tr>
+                <tr>
+                    <td>Prof. M. Kulkarni</td>
+                    <td>Assistant Professor</td>
+                    <td>Game Design, 3D Graphics, Computer Animation</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- courses section -->
+        <section id="courses">
+            <h3>Courses & BCS Subjects</h3>
+
+            <h4>Semester-Wise Subjects (BCS Program)</h4>
+            <table>
+                <tr>
+                    <th>Semester</th>
+                    <th>Core Theory Subjects</th>
+                    <th>Practical Labs</th>
+                </tr>
+                <tr>
+                    <td>Semester I</td>
+                    <td>C Programming, Digital Logic, Mathematics I, Communication Skills</td>
+                    <td>C Programming Lab, Digital Electronics Lab</td>
+                </tr>
+                <tr>
+                    <td>Semester II</td>
+                    <td>Data Structures in C++, DBMS, Discrete Mathematics, Operating Systems</td>
+                    <td>Data Structures Lab, SQL & Database Lab</td>
+                </tr>
+                <tr>
+                    <td>Semester III</td>
+                    <td>Java Programming, Computer Networks, Software Engineering, Web Tech</td>
+                    <td>Java Lab, Web Technologies Lab</td>
+                </tr>
+                <tr>
+                    <td>Semester IV</td>
+                    <td>Python Programming, Machine Learning, Cloud Computing, Major Project</td>
+                    <td>Python ML Lab, Project Implementation Lab</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- timetable section -->
+        <section id="timetable">
+            <h3>Timetable</h3>
+
+            <h4>Class Timetable</h4>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>9:00 AM - 11:00 AM</th>
+                    <th>11:15 AM - 1:15 PM</th>
+                    <th>2:00 PM - 4:00 PM</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Data Structures</td>
+                    <td>Python Theory</td>
+                    <td>Machine Learning</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Database Management</td>
+                    <td>Cloud Computing</td>
+                    <td>Cybersecurity Principles</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Generative AI Architecture</td>
+                    <td>DBMS Theory</td>
+                    <td>Game Engines & VR</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Software Engineering</td>
+                    <td>Computer Networks</td>
+                    <td>Ethics in Computing</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Algorithms & Logic</td>
+                    <td>Deep Learning Basics</td>
+                    <td>Project Review Session</td>
+                </tr>
+            </table>
+
+            <h4>Lab Schedule</h4>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Lab Slot (2:00 PM - 5:00 PM)</th>
+                    <th>Lab Location</th>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Data Science & Machine Learning Lab</td>
+                    <td>Computer Lab 1</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Python & Web Development Lab</td>
+                    <td>Computer Lab 3</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Game Design & VR Graphics Lab</td>
+                    <td>Multimedia Lab 2</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- achievements section -->
+        <section id="achievement">
+            <h3>Achievements</h3>
+
+            <h4>Student Achievements</h4>
+            <p>• 1st prize at National Level Hackathon 2025 for building an AI-Powered Smart Traffic Management
+                System.<br>
+                • 100% placement rate for MCA batch across multinational IT software enterprises.<br>
+                • Outstanding Performance Award at International Collegiate Programming Contest (ICPC).</p>
+
+            <h4>Faculty Achievements</h4>
+            <p>• Dr. A. Sharma published 5 research papers in IEEE international journals.<br>
+                • Prof. R. Verma awarded Best Educator in Technical Education 2025.<br>
+                • Dr. K. Patel authored the textbook "Modern Cloud Computing & Security Frameworks."</p>
+
+            <h4>Events Completed</h4>
+            <p>• Successfully organized 50+ technical workshops, inter-college seminars, and national code sprints.</p>
+        </section>
+
+        <!-- events section -->
+        <section id="events">
+            <h3>Events</h3>
+
+            <h4>Workshops</h4>
+            <p>• Hands-on Workshop on Generative AI, Prompt Engineering, & Large Language Models (LLMs).<br>
+                • Hands-on Cyber Forensics and Penetration Testing Masterclass.</p>
+
+            <h4>Seminars</h4>
+            <p>• International Seminar on Cyber Security & Blockchain Infrastructure.<br>
+                • Tech Talk on Quantum Computing Trends and Future Careers.</p>
+
+            <h4>Hackathons</h4>
+            <p>• 24-Hour Non-stop Code-A-Thon: Building Next-Gen Web Solutions.<br>
+                • GameJam 2026: 48-Hour Game Development Sprint.</p>
+        </section>
+
+        <!-- sidebar notices -->
+        <aside>
+            <h3>Announcements</h3>
+            <p>Mid-semester examinations begin next Monday. Check notice boards for seating arrangements.</p>
+        </aside>
+
+        <!-- contact section -->
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <p><b>Department Address:</b> Department of Computer Applications, Main Campus, Tech Block, City - 560001
+            </p>
+            <p><b>Email:</b> contact@department.edu | <b>Phone:</b> +1 800-555-0199</p>
+
+            <h4>Contact Form</h4>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <!-- footer tag -->
+    <footer>
+        <p> Department of Computer Applications. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>
