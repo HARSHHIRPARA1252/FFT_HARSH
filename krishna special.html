@@ -1,0 +1,100 @@
+<html>
+
+<head>
+
+    <title>Krishna special</title>
+    <style>
+        img {
+            width: 200px;
+            margin-right: 500px;
+            /*  transition: 1s;*/
+            /* animation-name: krishna;
+          animation-duration: 1s;
+          animation-timing-function: ease;
+          animation-delay: 1s;
+          animation-direction: alternate;
+          animation-iteration-count: infinite;*/
+            animation: krishna 5s ease 1s alternate infinite;
+        }
+
+        @keyframes krishna {
+            from {
+                transform: scale(0);
+
+            }
+
+            to {
+                transform: scale(300px);
+            }
+
+        }
+
+        /* img:hover{
+            transform: scale(1.7);
+
+        }*/
+        h1 {
+            text-align: center;
+
+
+        }
+
+        .load {
+            width: 100px;
+            height: 100px;
+            border: 10px solid lightblue;
+            border-top: 10px solid blue;
+            border-radius: 50%;
+            animation: load 2s linear infinite;
+            margin-left: 600px;
+        }
+
+        @keyframes load {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #birthday {
+            text-align: center;
+            color: red;
+            animation: birthdayy 2s ease 1s alternate infinite;
+        }
+
+        @keyframes birthdayy {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(300px);
+            }
+        }
+
+        div {
+            border: 1px solid black;
+            width: 300px;
+            margin-left: 500px;
+            margin-top: 100px;
+            border-radius: 20px;
+            background-color: lightblue;
+            box-shadow: 4px 8px 12px grey;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Krishna Special</h1>
+        <marquee behavior="" direction=""><img src="./download__8_-removebg-preview.png" alt="Krishna"></marquee>
+        <h1 id="birthday">Happy birthday Krishna!</h1>
+    </div>
+    <br><br>
+    <div class="load" </body>
+
+</html>

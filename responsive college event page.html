@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive college event page</title>
+    <style>
+        
+     * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+.header {
+    background-color: #1769aa;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.top {
+    margin: 0;
+    font-size: 28px;
+}
+nav{
+    background-color: #222;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+}
+
+nav a:hover{
+    color: #4da3ff;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+}
+
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.Banner{
+    text-align: center;
+    background-color: #dff0ff;
+}
+
+.Banner h1{
+    color: #1769aa;
+    font-size: 35px;
+}
+
+.Banner p{
+    font-size: 18px;
+}
+
+button{
+    background-color: #1769aa;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0d4f80;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th{
+    background-color: #1769aa;
+    color: white;
+}
+
+.speaker{
+    display: inline-block;
+    width: 45%;
+    padding: 15px;
+    margin: 10px 1%;
+    background-color: #eef7ff;
+    border-radius: 6px;
+}
+
+.speaker h3{
+    color: #1769aa;
+}
+
+input{
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+label{
+    display: inline-block;
+    width: 70px;
+}
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    nav a{
+        display: block;
+        margin: 8px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .Banner h1 {
+        font-size: 28px;
+    }
+
+    .speaker {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="top">responsive college event page</h1>
+    </header>
+   <nav>
+    <a href="#home">home</a>
+    <a href="#details">details</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#speakers">Speaker</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+</nav>
+    <main>
+        <section id="home" class="Banner">
+            <h1>College Tech Fest 2026</h1>
+            <p>Welcome to our College Event</p>
+            <button>Register Now</button>
+        </section>
+        <section id="details">
+            <p><b>Date:</b> 15 October 2026</p>
+            <p><b>Time:</b> 10:00 AM</p>
+            <p><b>Venue:</b> College Auditorium</p>
+        </section>
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Opening Ceremony</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Technical Session</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td>Project Presentation</td>
+                </tr>
+            </table>
+        </section>
+        <section id="speakers">
+            <h2>Speakers</h2>
+
+            <div class="speaker">
+                <h3>Mr. Raghv Sir</h3>
+                <p>FULL Stack developer</p>
+            </div>
+
+            <div class="speaker">
+                <h3>Mr. Harsh</h3>
+                <p>Ai Expert</p>
+            </div>
+        </section>
+        <section id="register">
+            <h2>Registration</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text" required><br><br>
+
+                <label>Email:</label>
+                <input type="email" required><br><br>
+
+                <label>Phone:</label>
+                <input type="contact" required><br><br>
+
+                <button type="submit">Register</button><br><br>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: aufest@gmail.com</p>
+            <p>Phone: 9327296666</p>
+        </section>
+</main>
+        <footer>
+            <p>© 2026 College Tech Fest</p>
+        </footer>
+</body>
+
+</html>
