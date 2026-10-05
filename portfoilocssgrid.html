@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            animation: welcome 2s;
+        }
+
+        @keyframes welcome {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        .about {
+            background-color: white;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border: 1px solid black;
+            transition: 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1);
+            background-color: lightblue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        .skills {
+            background-color: white;
+        }
+
+        .skills p {
+            display: inline-block;
+            background-color: lightblue;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1px solid blue;
+            transition: 0.3s;
+        }
+
+        .skills p:hover {
+            transform: scale(1.1);
+        }
+
+        .contact {
+            background-color: white;
+        }
+
+        form {
+            width: 300px;
+            margin: auto;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Hello, I am Harsh</p>
+        <p>Web Developer</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a student interested in Web Development and Technology.</p>
+    </section>
+
+    <section>
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>College Event Website</p>
+                <button>View Project</button>
+            </div>
+
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Food Delivery Website</p>
+                <button>View Project</button>
+            </div>
+
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Student Management System</p>
+                <button>View Project</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>My Skills</h2>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>Python</p>
+        <p>Java</p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Enter Your Name">
+            <input type="email" placeholder="Enter Your Email">
+            <textarea placeholder="Enter Your Message"></textarea>
+            <br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 My Portfolio</p>
+    </footer>
+
+</body>
+</html>
