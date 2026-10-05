@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Grade Calculator</title>
+</head>
+
+<body>
+
+    <h1>Java Script Grade Calculator</h1>
+    <form>
+        <label>Name:</label>
+        <input type="text" id="name" required>
+        <br><br>
+        <label>CLS:</label>
+        <input type="number" id="cls" min="0" max="100" required>
+        <br><br>
+        <label>EFT:</label>
+        <input type="number" id="eft" min="0" max="100" required>
+        <br><br>
+        <label>ADST:</label>
+        <input type="number" id="adst" min="0" max="100" required>
+        <br><br>
+        <label>AUI:</label>
+        <input type="number" id="aui" min="0" max="100" required>
+        <br><br>
+        <label>PST:</label>
+        <input type="number" id="pst" min="0" max="100" required>
+        <br><br>
+        <button type="button" onclick="calculateGrade()">
+            Calculate Grade
+        </button>
+        <p id="name1"></p>
+        <p id="total"></p>
+        <p id="Average"></p>
+        <p id="percentage"></p>
+        <p id="grade"></p>
+        <p id="passfail"></p>
+    </form>
+    <script>
+        function calculateGrade() {
+
+            let name = document.getElementById("name").value;
+
+            let sub1 = Number(document.getElementById("eft").value);
+            let sub2 = Number(document.getElementById("aui").value);
+            let sub3 = Number(document.getElementById("cls").value);
+            let sub4 = Number(document.getElementById("adst").value);
+            let sub5 = Number(document.getElementById("pst").value);
+
+            document.getElementById("name1").innerHTML =
+                "Name : " + name;
+            let total = sub1 + sub2 + sub3 + sub4 + sub5;
+            document.getElementById("total").innerHTML =
+                "Total Marks : " + total;
+            let avg = total / 5;
+            document.getElementById("Average").innerHTML =
+                "Average Marks : " + avg.toFixed(2);
+            let percentage = (total / 500) * 100;
+            document.getElementById("percentage").innerHTML =
+                "Percentage : " + percentage.toFixed(2) + "%";
+            if (percentage > 80 && percentage <= 100) {
+                document.getElementById("grade").innerHTML =
+                    "Grade : O+";
+            }
+            else if (percentage > 60 && percentage <= 80) {
+                document.getElementById("grade").innerHTML =
+                    "Grade : A";
+            }
+            else if (percentage >= 45 && percentage <= 60) {
+                document.getElementById("grade").innerHTML =
+                    "Grade : B";
+            }
+            else {
+                document.getElementById("grade").innerHTML =
+                    "Grade : F";
+            }
+
+            if (percentage >= 45) {
+                document.getElementById("passfail").innerHTML =
+                    "Pass/Fail : Pass";
+            }
+            else {
+                document.getElementById("passfail").innerHTML =
+                    "Pass/Fail : Fail";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

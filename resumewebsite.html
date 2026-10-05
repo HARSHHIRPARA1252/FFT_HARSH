@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8ecf1;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+
+.resume {
+    width: 850px;
+    max-width: 95%;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+ 
+
+header {
+    background-color: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.contact {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+
+
+
+section {
+    padding: 25px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    color: #172b4d;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #172b4d;
+    padding-bottom: 5px;
+}
+.item {
+    margin-bottom: 18px;
+}
+
+.item h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.item p {
+    color: #666;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #172b4d;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.skills span:hover {
+    background-color: #304f7d;
+    cursor: pointer;
+}
+
+
+
+button{
+    height: 40px;
+    width: 100px;
+    background-color: #172b4d;
+    color: white;
+
+    
+}
+
+div{
+    text-align: center;
+    margin-bottom: 20px;    
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="resume">
+
+        <!-- Header -->
+        <header>
+            <h1>Harsh Hirpara</h1>
+            <p>Ai Engineer</p>
+
+            <div class="contact">
+                <span>harsh@example.com</span>
+                <span>+91 98765 43210</span>
+                <span> India</span>
+            </div>
+        </header>
+
+        <!-- About Me -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a passionate IT professional interested in web development,
+                data science, artificial intelligence and modern technologies.
+                I enjoy learning new technologies and developing useful projects.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+<div class="item">
+    <h3>Master of Computer Application (MCA)</h3>
+    <p>Alliance University</p>
+    <p>Running</p>
+
+    
+</div>
+            <div class="item">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p>Silver Oak University</p>
+                <p>Completed: 2026</p>
+            </div>
+
+            <div class="item">
+                <h3>Higher Secondary Education</h3>
+                <p>Gujarat Board</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+
+            <div class="item">
+                <h3>BGMI Esports Analytics</h3>
+                <p>
+                    Developed an analytics and win-probability prediction system
+                    using Python, Machine Learning and Flask/Streamlit.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>E-Commerce Website</h3>
+                <p>
+                    Designed a responsive e-commerce website using HTML, CSS
+                    and JavaScript.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+
+            <div class="item">
+                <h3>Digital Marketing Intern</h3>
+                <p>
+                    Worked on SEO, keyword research, social media marketing,
+                    content creation and digital marketing strategies.
+                </p>
+            </div>
+        </section>
+
+        <!-- Hobbies -->
+        <section>
+            <h2>Hobbies</h2>
+            <p>Sports | eSports | Technology | Learning New Skills</p>
+        </section>
+
+        <!-- Footer -->
+        <div>
+    <button onclick="window.print()">Print Resume</button>
+        </div>
+    </div>
+</body>
+</html>
